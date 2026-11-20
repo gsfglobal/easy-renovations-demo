@@ -52,7 +52,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                 <dd className="mt-2 font-display text-2xl">{m.value}</dd>
               </div>
             ))}
-            {p.demo && <DemoBadge label="Progetto dimostrativo" className="col-span-2 w-fit lg:col-span-1" />}
+            {p.demo && <DemoBadge label="Esempio · foto d'archivio" className="col-span-2 w-fit lg:col-span-1" />}
           </dl>
           <div className="space-y-6 text-stone lg:col-span-7 lg:col-start-6">
             {p.description.map((d, i) => (

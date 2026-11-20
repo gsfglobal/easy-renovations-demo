@@ -21,7 +21,7 @@ export function ProjectCard({
         <span className="absolute right-5 bottom-5 translate-y-3 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-paper opacity-0 transition-all duration-700 ease-(--ease-luxe) group-hover:translate-y-0 group-hover:opacity-100">
           Vedi progetto →
         </span>
-        {project.demo && <DemoBadge className="absolute top-3 left-3" label="Progetto dimostrativo" />}
+        {project.demo && <DemoBadge className="absolute top-3 left-3" label="Esempio · foto d'archivio" />}
       </div>
       <div className={cn("mt-5 flex items-baseline justify-between gap-4", tone === "dark" ? "text-paper" : "text-charcoal")}>
         <h3 className="font-display text-2xl leading-tight sm:text-[1.9rem]">{project.title}</h3>

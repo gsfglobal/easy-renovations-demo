@@ -20,7 +20,7 @@ export function BeforeAfterSection() {
                 <figcaption className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                   <span className="font-display text-2xl">{item.label}</span>
                   <span className="flex flex-col gap-2 text-sm text-stone sm:items-end">
-                    {item.demo && <DemoBadge label="Esempio dimostrativo" className="w-fit" />}
+                    {item.demo && <DemoBadge label="Esempio · foto d'archivio" className="w-fit" />}
                     {item.caption}
                   </span>
                 </figcaption>

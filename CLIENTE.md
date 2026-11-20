@@ -9,6 +9,11 @@ Fonte dati: scheda Google Maps pubblica, verificata il 20/11/2026 (https://maps.
 - 4 estratti di recensioni Google, solo iniziali del cliente
 - Posizionamento: ristrutturazioni d'interni chiavi in mano, case d'epoca e immobili vincolati (dalle recensioni di architetti), bagni, case vacanze, piccoli condomini
 
+## Foto (provvisorie)
+Le foto in `public/images/foto/` sono foto d'archivio gratuite di Pexels (licenza Pexels: uso commerciale consentito, nessuna attribuzione obbligatoria).
+Nel sito sono etichettate "Foto d'archivio" e vanno sostituite con le foto dei lavori di Easy Renovations prima della produzione.
+ID Pexels usati: 4857757, 5691530, 6312353, 9718895, 9908376, 6527029, 6588599, 16476336, 6492399, 6980656, 7019013, 7535076, 15108551, 21792127, 1743227, 6934189, 4756490, 6758534, 7005268, 7227647, 6301168, 10486139.
+
 ## Da verificare con l'impresa prima della produzione
 1. **Legame con "Edil Cirillo" / sig. Cirillo**: molte recensioni e il logo su una foto citano questo nome. Sul sito demo non compare.
 2. Orari: su Google risulta "aperto 24 ore su 24, sabato chiuso" (probabile errore). Nel sito: "Su appuntamento".

@@ -9,7 +9,7 @@ type ServiceInput = z.input<typeof serviceSchema>;
  * bagni, case vacanze, lavori in piccoli condomini).
  * contentReviewed: false → da confermare con l'impresa prima della produzione.
  */
-const img = (file: string, alt: string) => ({ src: `/images/demo/services/${file}.webp`, alt: `Immagine dimostrativa: ${alt}`, demo: true });
+const img = (file: string, alt: string) => ({ src: `/images/foto/${file}.webp`, alt: `Foto d'archivio: ${alt}`, demo: true });
 
 export const services: ServiceInput[] = [
   {
@@ -22,8 +22,8 @@ export const services: ServiceInput[] = [
       "Seguiamo la ristrutturazione completa dell'appartamento: demolizioni, rifacimento degli impianti, bagni, pavimenti, rivestimenti, pitture e finiture.",
       "Un unico riferimento coordina squadre, forniture e tempistiche, e ti guida nella scelta delle soluzioni più adatte, anche quando la casa è piccola e ogni metro conta.",
     ],
-    image: img("ristrutturazioni-appartamenti", "soggiorno luminoso con panca"),
-    gallery: [img("ristrutturazioni-appartamenti-2", "dettaglio di un interno")],
+    image: img("appartamenti", "soggiorno ristrutturato con divano e tende"),
+    gallery: [img("appartamenti-2", "soggiorno open space con angolo pranzo")],
     benefits: [
       { title: "Dalla A alla Z", text: "Dalle demolizioni alle finiture, senza dover coordinare ditte diverse." },
       { title: "Scelte guidate", text: "Ti aiutiamo a scegliere soluzioni e materiali adatti alla tua casa." },
@@ -50,8 +50,8 @@ export const services: ServiceInput[] = [
       "Napoli è fatta di palazzi storici, volte, soffitti decorati e pavimenti d'epoca. Ristrutturiamo questi spazi con un approccio attento, che preserva l'identità dell'immobile e la rende più comoda da vivere.",
       "Lavoriamo a fianco dell'architetto e del committente anche su immobili sottoposti a vincolo della Soprintendenza, con precisione artigianale e rispetto delle tecniche costruttive tradizionali.",
     ],
-    image: img("ristrutturazioni-complete", "interno con archi e luce naturale"),
-    gallery: [img("ristrutturazioni-complete-2", "dettaglio architettonico")],
+    image: img("epoca", "stanza d'epoca con soffitti alti"),
+    gallery: [img("epoca-2", "scalone storico con ringhiera in ferro battuto")],
     benefits: [
       { title: "Rispetto del contesto storico", text: "Interventi pensati per preservare il carattere dell'edificio." },
       { title: "Al fianco dell'architetto", text: "Collaborazione stretta con il progettista e la direzione lavori." },
@@ -78,8 +78,8 @@ export const services: ServiceInput[] = [
       "Rifacciamo il bagno completamente: rimozione dei vecchi rivestimenti, impianti idrici e di scarico, massetti, rivestimenti, sanitari e rubinetterie.",
       "Studiamo la distribuzione anche nei bagni piccoli, con docce a filo pavimento, sanitari sospesi e soluzioni salvaspazio.",
     ],
-    image: img("ristrutturazione-bagni", "bagno moderno con rivestimenti chiari"),
-    gallery: [img("ristrutturazione-bagni-2", "dettaglio di un bagno")],
+    image: img("bagni", "bagno con lavabo sospeso e doccia"),
+    gallery: [img("bagni-2", "bagno in marmo con doccia in cristallo")],
     benefits: [
       { title: "Impianti rifatti", text: "Adduzioni e scarichi nuovi dove necessario." },
       { title: "Spazio ottimizzato", text: "Soluzioni pensate anche per bagni piccoli o ciechi." },
@@ -105,8 +105,8 @@ export const services: ServiceInput[] = [
       "Rinnoviamo appartamenti destinati a casa vacanze e affitti brevi: distribuzione degli spazi, bagni, impianti e finiture pensate per l'uso intensivo.",
       "Rispettare la data di consegna è fondamentale per chi affitta: per questo pianifichiamo il cantiere e coordiniamo ogni lavorazione per arrivare pronti.",
     ],
-    image: img("ristrutturazione-cucine", "cucina e zona giorno luminosa"),
-    gallery: [img("ristrutturazione-cucine-2", "dettaglio di una cucina")],
+    image: img("vacanze", "monolocale con cucina e zona giorno"),
+    gallery: [img("vacanze-2", "cucina moderna con tavolo in vetro")],
     benefits: [
       { title: "Tempi certi", text: "Cantiere pianificato per non perdere la stagione." },
       { title: "Spazi funzionali", text: "Ogni metro sfruttato per accogliere gli ospiti." },
@@ -130,8 +130,8 @@ export const services: ServiceInput[] = [
       "Eseguiamo lavori nelle parti comuni di piccoli condomini: androni, scale, finiture e manutenzioni.",
       "Organizziamo il cantiere per limitare i disagi ai residenti e teniamo aggiornati amministratore e tecnici sull'avanzamento.",
     ],
-    image: img("locali-commerciali", "ambiente con finiture eleganti"),
-    gallery: [img("locali-commerciali-2", "dettaglio di finiture")],
+    image: img("condomini", "vano scala condominiale con ringhiera"),
+    gallery: [img("condomini-2", "facciata di un palazzo storico")],
     benefits: [
       { title: "Cantiere ordinato", text: "Meno disagi per chi abita nel palazzo." },
       { title: "Un solo riferimento", text: "Per amministratore, tecnici e condòmini." },

@@ -58,8 +58,8 @@ export const siteConfig = {
     subtitle: "La casa rinasce.",
     description:
       "Appartamenti, case d'epoca e immobili vincolati a Napoli: ristrutturazioni chiavi in mano, con un coordinamento unico del cantiere e consegna nei tempi concordati.",
-    image: { src: "/images/demo/hero/hero.webp", alt: "Immagine dimostrativa: interno con archi e luce calda", demo: true },
-    imageMobile: { src: "/images/demo/hero/hero-mobile.webp", alt: "Immagine dimostrativa: interno con archi e luce calda", demo: true },
+    image: { src: "/images/foto/hero.webp", alt: "Foto d'archivio: zona giorno luminosa con tavolo da pranzo e libreria", demo: true },
+    imageMobile: { src: "/images/foto/hero-mobile.webp", alt: "Foto d'archivio: stanza d'epoca con soffitti alti e grande finestra", demo: true },
     video: "",
     ctaPrimary: "Richiedi un sopralluogo",
     ctaSecondary: "Guarda i lavori",
@@ -72,7 +72,7 @@ export const siteConfig = {
       "Ristrutturiamo appartamenti dalla A alla Z: demolizioni, impianti, bagni, pavimenti e finiture, con un unico riferimento che coordina squadre e tempi.",
       "Negli edifici storici lavoriamo nel rispetto dei vincoli e dei dettagli originali, a fianco dell'architetto e del committente.",
     ],
-    image: { src: "/images/demo/intro/intro.webp", alt: "Immagine dimostrativa: soggiorno luminoso con panca in pietra", demo: true },
+    image: { src: "/images/foto/intro.webp", alt: "Foto d'archivio: soggiorno elegante con divani e specchio", demo: true },
   },
 
   about: {
@@ -82,7 +82,7 @@ export const siteConfig = {
       "Easy Renovations ha sede in Corso Vittorio Emanuele, a Napoli. Ci occupiamo di ristrutturazioni d'interni: appartamenti, case vacanze, bagni e lavori in piccoli condomini.",
       "Chi ci ha scelto parla di lavori consegnati nei tempi, di un coordinamento attento del cantiere e di una squadra seria e competente. Collaboriamo spesso con architetti, anche su immobili sottoposti a vincolo della Soprintendenza.",
     ],
-    image: { src: "/images/demo/about/about.webp", alt: "Immagine dimostrativa: sequenza di archi in un interno caldo", demo: true },
+    image: { src: "/images/foto/about.webp", alt: "Foto d'archivio: palazzo storico con balconi a Napoli", demo: true },
     values: [
       { title: "Un unico coordinamento", text: "Una sola regia per squadre, forniture e tempistiche: tu hai un solo interlocutore.", icon: "clipboard" },
       { title: "Cura artigianale", text: "Precisione nei dettagli e rispetto delle tecniche costruttive tradizionali.", icon: "hammer" },
@@ -106,10 +106,10 @@ export const siteConfig = {
     intro: "Trascina il cursore per confrontare lo stato iniziale e il risultato finale.",
     items: [
       {
-        label: "Esempio dimostrativo",
-        before: { src: "/images/demo/before-after/prima.webp", alt: "Esempio dimostrativo: ambiente prima dell'intervento", demo: true },
-        after: { src: "/images/demo/before-after/dopo.webp", alt: "Esempio dimostrativo: ambiente dopo l'intervento", demo: true },
-        caption: "Illustrazione dimostrativa, non un lavoro di Easy Renovations. Nella versione definitiva: foto reali dello stesso intervento.",
+        label: "Esempio",
+        before: { src: "/images/foto/prima.webp", alt: "Foto d'archivio: stanza durante i lavori di ristrutturazione", demo: true },
+        after: { src: "/images/foto/dopo.webp", alt: "Foto d'archivio: soggiorno ristrutturato e arredato", demo: true },
+        caption: "Foto d'archivio di due ambienti diversi, non un lavoro di Easy Renovations. Nella versione definitiva: foto reali dello stesso intervento.",
         demo: true,
       },
     ],
