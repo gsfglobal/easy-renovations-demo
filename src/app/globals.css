@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/*
+ * I colori vengono iniettati come variabili CSS da layout.tsx leggendo
+ * site.config.ts → branding. Qui li mappiamo nelle utility Tailwind:
+ * bg-charcoal, text-champagne, border-stone/20, ecc.
+ */
+@theme inline {
+  --color-charcoal: var(--brand-charcoal);
+  --color-ivory: var(--brand-ivory);
+  --color-champagne: var(--brand-champagne);
+  --color-stone: var(--brand-stone);
+  --color-paper: var(--brand-white);
+  /* Accento scurito per testi piccoli su sfondi chiari (contrasto WCAG AA) */
+  --color-champagne-deep: color-mix(in oklab, var(--brand-champagne) 58%, var(--brand-charcoal));
+  --color-ink: color-mix(in oklab, var(--brand-charcoal) 88%, var(--brand-ivory));
+  --color-sand: color-mix(in oklab, var(--brand-ivory) 82%, var(--brand-stone));
+
+  --font-display: var(--font-heading-stack);
+  --font-sans: var(--font-body-stack);
+
+  --radius-brand: var(--brand-radius);
+
+  --ease-luxe: cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-reveal-line: reveal-line 1.2s var(--ease-luxe) both;
+  --animate-fade-up: fade-up 1.1s var(--ease-luxe) both;
+  --animate-hero-zoom: hero-zoom 9s var(--ease-luxe) both;
+  --animate-scroll-cue: scroll-cue 2.4s ease-in-out infinite;
+
+  @keyframes reveal-line {
+    from { transform: translateY(105%); }
+    to { transform: translateY(0); }
+  }
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes hero-zoom {
+    from { transform: scale(1.09); }
+    to { transform: scale(1); }
+  }
+  @keyframes scroll-cue {
+    0% { transform: scaleY(0); transform-origin: top; }
+    45% { transform: scaleY(1); transform-origin: top; }
+    55% { transform: scaleY(1); transform-origin: bottom; }
+    100% { transform: scaleY(0); transform-origin: bottom; }
+  }
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+  body {
+    @apply bg-ivory text-charcoal font-sans antialiased;
+    font-feature-settings: "ss01", "kern";
+  }
+  ::selection {
+    background: var(--brand-champagne);
+    color: var(--brand-white);
+  }
+  :focus-visible {
+    outline: 2px solid var(--brand-champagne);
+    outline-offset: 3px;
+  }
+  h1, h2, h3, .font-display {
+    font-family: var(--font-heading-stack);
+    font-weight: 400;
+    letter-spacing: -0.015em;
+  }
+  summary::-webkit-details-marker { display: none; }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-12;
+  }
+  .eyebrow {
+    @apply text-[0.7rem] font-semibold uppercase tracking-[0.28em];
+  }
+  .display-1 {
+    @apply font-display text-[2.75rem] leading-[0.98] sm:text-6xl lg:text-[5.6rem] xl:text-[6.4rem];
+  }
+  .display-2 {
+    @apply font-display text-4xl leading-[1.02] sm:text-5xl lg:text-[4rem];
+  }
+  .display-3 {
+    @apply font-display text-3xl leading-[1.08] sm:text-4xl;
+  }
+  .lead {
+    @apply text-base leading-relaxed sm:text-lg;
+  }
+  .hairline {
+    @apply h-px w-full bg-current opacity-15;
+  }
+}
+
+/* Riduzione movimento: disattiva animazioni decorative */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
